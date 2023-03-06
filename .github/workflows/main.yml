@@ -30,7 +30,7 @@ jobs:
         # Установка зависимостей
         pip install -r requirements.txt
 
-    -name: Test with flake8 and django tests
+    - name: Test with flake8 and django tests
       run: |
         # Запуск проверки проекта
         python -m flake8
