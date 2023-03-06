@@ -21,8 +21,8 @@ jobs:
         # выбор версии Python
         python-version: 3.7
       
-      -name: Install dependencies
-       run: |
+    - name: Install dependencies
+      run: |
         # Обновление pip
         python -m pip install --upgrade pip
         # Установка flake8 и его плагинов
@@ -30,8 +30,7 @@ jobs:
         # Установка зависимостей
         pip install -r requirements.txt
 
-      -name: Test with flake8 and django tests
-        run: |
-          # Запуск проверки проекта
-          python -m flake8
-          
+    -name: Test with flake8 and django tests
+      run: |
+        # Запуск проверки проекта
+        python -m flake8
